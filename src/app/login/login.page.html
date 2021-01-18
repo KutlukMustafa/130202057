@@ -1,0 +1,27 @@
+
+
+<ion-content class = "ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center">Giriş Sayfası</ion-card-title>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position= "floating">Email Giriniz</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+
+        </ion-item>
+        <ion-item>
+          <ion-label position= "floating">Şifrenizi Giriniz</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <ion-button shape ="round" (click)="login()"  fill="outline" color ="warning">  Giriş</ion-button>
+  </ion-card>
+
+  <ion-button  (click)= "register()" color ="warning" >Kayıt ol</ion-button>
+
+</ion-content>

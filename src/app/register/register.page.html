@@ -1,0 +1,40 @@
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: center">Kayıt</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position ="floating">İsminizi giriniz</ion-label>
+          <ion-input [(ngModel)]="name" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position ="floating">Email giriniz</ion-label>
+          <ion-input [(ngModel)]="email" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position ="floating">Şifre giriniz</ion-label>
+          <ion-input [(ngModel)]="password" type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position ="floating">Tekrar şifre giriniz</ion-label>
+          <ion-input [(ngModel)]="confirmPassword" type="password" (ionChange)="checkPassword()" ></ion-input>
+          <ion-text *ngIf= "password && !passwordMatch" color = "danger"> Şifreniz eşleşmiyor </ion-text>
+          <ion-text *ngIf= "password && passwordMatch" color = "succes"> Şifreniz aynı </ion-text>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+
+    <ion-button [disabled]="!passwordMatch"  color ="warning" (click) ="register()" >Kaydet</ion-button>
+  </ion-card>
+
+
+
+</ion-content>
