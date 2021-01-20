@@ -17,9 +17,16 @@ Bir tarayıcıda yerel olarak çalıştırın: "ionic serve"
 -Kısaca genel olarak firebase veritabanı kullanılıp kayıt etme durumunda veritabanı eklendi bilgiler. Blank ile template yapısı 
 oluşturulan projede service,guard,component,interface kullanıldı. Page ile sayfalar oluşturuldu. Navigate işlemi gerçekleştirilmesi sağlandı. 
 
-
 Proje ionic serve ile çalıştırıldıktan sonra giriş sayfası karşılamaktadır. Burada giriş için mail ve şifre istenmektedir.
 Giriş sayfasında kayıt olma butonu bulunmaktadır. Kayıt ol dediğiniz de sizi kayıt olma sayfasına yönlendirecektir. Burada email
-şifre ve isim bilgilerinden sonra kayıt olma seçeneği sunmaktadır. Kayıt olunca istendiğinde navigate ile giriş sayfasına yönlendirilir.
+şifre ve isim bilgilerinden sonra kayıt olma seçeneği sunmaktadır. Kayıt olunca navigate ile giriş sayfasına yönlendirilir.
 Kayıt olunan mail adresine firebase veritabanına kaydedilir ve email adresine bir mail gider doğrulama için. Ancak kayıt için geçerli bir mail olmalı.
 Mail adresinden doğrulama yapan kişi login girişi yapabilir. Sonrasından mail ve şifre bilgileri ile giriş yapan kişi home sayfasına yönlendirilir. 
+
+
+Projede yapılanları daha net görmek için aşağıda resimler ve açıklamalarıyla bakalım.
+
+
+
+
+
